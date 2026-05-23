@@ -1,3 +1,24 @@
+# Python
 __pycache__/
 *.pyc
+*.egg-info/
+dist/
+build/
+
+# Virtualenv
+.venv/
+venv/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Test outputs
+output_verify/
+output_test/
+
+# OS
 .DS_Store
+Thumbs.db
