@@ -1,6 +1,6 @@
 # GB-Parser
 
-国标（GB/T）PDF 一键转结构化 Markdown，自动修复因 PDF 字体编码损坏导致的英文乱码。
+标准 PDF 一键转结构化 Markdown，自动修复因 PDF 字体编码损坏导致的英文乱码。适用于 GB/T、ISO、ASTM 等各类标准文件。
 
 ## 安装
 
@@ -100,4 +100,4 @@ pypdf 用于检测 PDF 类型（文本型电子文档 vs 扫描件），
 ## 给 Agent 使用的 Skill
 
 本项目附带 `gb-convert` Skill，支持 Claude Code 和 OpenClaw 自动调用。
-将 `skills/gb-convert/SKILL.md` 复制到项目的 `.claude/skills/gb-convert/` 目录即可使用 `/gb-convert` 命令。
+将 `.claude/skills/gb-convert/SKILL.md` 复制到项目的 `.claude/skills/gb-convert/` 目录即可使用 `/gb-convert` 命令。
