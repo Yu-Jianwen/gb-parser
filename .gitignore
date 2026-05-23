@@ -15,6 +15,9 @@ venv/
 *.swp
 *.swo
 
+# Claude Code
+.claude/settings.json
+
 # Test outputs
 output_*/
 
