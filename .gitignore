@@ -16,8 +16,11 @@ venv/
 *.swo
 
 # Test outputs
-output_verify/
-output_test/
+output_*/
+
+# PDFs
+*.pdf
+*.PDF
 
 # OS
 .DS_Store
