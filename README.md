@@ -100,4 +100,12 @@ pypdf 用于检测 PDF 类型（文本型电子文档 vs 扫描件），
 ## 给 Agent 使用的 Skill
 
 本项目附带 `gb-convert` Skill，支持 Claude Code 和 OpenClaw 自动调用。
-将 `.claude/skills/gb-convert/SKILL.md` 复制到项目的 `.claude/skills/gb-convert/` 目录即可使用 `/gb-convert` 命令。
+
+**安装 Skill：**
+```bash
+# 方式1: 直接安装 .skill 文件
+claude --install gb-convert.skill
+
+# 方式2: 手动复制到项目的 .claude/skills/ 目录
+cp -r .claude/skills/gb-convert /your-project/.claude/skills/
+```

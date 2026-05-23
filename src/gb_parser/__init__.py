@@ -1,4 +1,4 @@
-"""GB-Parser: 国标 PDF 结构化转换和英文乱码修复。
+"""GB-Parser: 标准 PDF 结构化转换和英文乱码修复。
 
 核心 API:
     detect_pdf(pdf_path) -> dict      检测 PDF 类型

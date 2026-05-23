@@ -6,22 +6,22 @@
 
 ### 单文件转换
 ```bash
-gb-convert <input.pdf> -o <output_dir>
+gb-convert <input.pdf> -o <output_dir> --json
 ```
 
 ### 批量转换
 ```bash
-gb-convert ./pdfs/ -o ./output
+gb-convert ./pdfs/ -o ./output --json
 ```
 
 ### 仅修复已有 MinerU 输出
 ```bash
-gb-fix ./output/some-standard/auto/some-standard.md
+gb-fix ./output/some-standard/auto/some-standard.md --json
 ```
 
 ### 带英文标题提升准确率
 ```bash
-gb-convert <input.pdf> --seed "Terminology for building windows and doors"
+gb-convert <input.pdf> --seed "Terminology for building windows and doors" --json
 ```
 
 ## 状态报告

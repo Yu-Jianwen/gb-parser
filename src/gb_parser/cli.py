@@ -28,7 +28,7 @@ def _print_result(result: dict, json_mode: bool) -> None:
 
 def main_convert():
     p = argparse.ArgumentParser(
-        description="国标 PDF 一键转 Markdown（检测 → MinerU → 修复乱码）")
+        description="标准 PDF 一键转 Markdown（检测 → MinerU → 修复乱码）")
     p.add_argument("input", help="PDF 文件路径或目录")
     p.add_argument("-o", "--output", default="./output", help="输出目录 (默认 ./output)")
     p.add_argument("--seed", default="", help="正确的英文标题（提升映射准确率）")
@@ -38,7 +38,7 @@ def main_convert():
     input_path = Path(args.input)
     if input_path.is_dir():
         results = []
-        for pdf_file in sorted(input_path.glob("*.pdf")):
+        for pdf_file in sorted(list(input_path.glob("*.pdf")) + list(input_path.glob("*.PDF"))):
             result = convert_pdf(pdf_file, output_dir=args.output, seed=args.seed)
             results.append(result)
             if args.json:

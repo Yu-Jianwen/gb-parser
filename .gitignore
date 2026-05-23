@@ -25,6 +25,19 @@ output_*/
 *.pdf
 *.PDF
 
+# Test & coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.local
+
 # OS
 .DS_Store
 Thumbs.db
